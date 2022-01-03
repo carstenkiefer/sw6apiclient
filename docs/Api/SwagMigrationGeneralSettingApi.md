@@ -1,0 +1,386 @@
+# Swagger\Client\SwagMigrationGeneralSettingApi
+
+All URIs are relative to *http://sw6.hoefer-shop.de/api*
+
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**createSwagMigrationGeneralSetting**](SwagMigrationGeneralSettingApi.md#createswagmigrationgeneralsetting) | **POST** /swag-migration-general-setting | Create a new Swag Migration General Setting resources
+[**deleteSwagMigrationGeneralSetting**](SwagMigrationGeneralSettingApi.md#deleteswagmigrationgeneralsetting) | **DELETE** /swag-migration-general-setting/{id} | Delete a Swag Migration General Setting resource
+[**getSwagMigrationGeneralSetting**](SwagMigrationGeneralSettingApi.md#getswagmigrationgeneralsetting) | **GET** /swag-migration-general-setting/{id} | Detailed information about a Swag Migration General Setting resource
+[**getSwagMigrationGeneralSettingList**](SwagMigrationGeneralSettingApi.md#getswagmigrationgeneralsettinglist) | **GET** /swag-migration-general-setting | List with basic information of Swag Migration General Setting resources
+[**updateSwagMigrationGeneralSetting**](SwagMigrationGeneralSettingApi.md#updateswagmigrationgeneralsetting) | **PATCH** /swag-migration-general-setting/{id} | Partially update information about a Swag Migration General Setting resource
+
+# **createSwagMigrationGeneralSetting**
+> \Swagger\Client\Model\InlineResponse200452 createSwagMigrationGeneralSetting($body, $_response)
+
+Create a new Swag Migration General Setting resources
+
+### Example
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+// Configure OAuth2 access token for authorization: oAuth
+$config = Swagger\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+
+$apiInstance = new Swagger\Client\Api\SwagMigrationGeneralSettingApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client(),
+    $config
+);
+$body = new \Swagger\Client\Model\SwagmigrationgeneralsettingBody(); // \Swagger\Client\Model\SwagmigrationgeneralsettingBody | 
+$_response = "_response_example"; // string | Data format for response. Empty if none is provided.
+
+try {
+    $result = $apiInstance->createSwagMigrationGeneralSetting($body, $_response);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling SwagMigrationGeneralSettingApi->createSwagMigrationGeneralSetting: ', $e->getMessage(), PHP_EOL;
+}
+?>
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | [**\Swagger\Client\Model\SwagmigrationgeneralsettingBody**](../Model/SwagmigrationgeneralsettingBody.md)|  | [optional]
+ **_response** | **string**| Data format for response. Empty if none is provided. | [optional]
+
+### Return type
+
+[**\Swagger\Client\Model\InlineResponse200452**](../Model/InlineResponse200452.md)
+
+### Authorization
+
+[oAuth](../../README.md#oAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/vnd.api+json, application/json
+ - **Accept**: application/vnd.api+json, application/json
+
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+
+# **createSwagMigrationGeneralSetting**
+> \Swagger\Client\Model\InlineResponse200452 createSwagMigrationGeneralSetting($body, $_response)
+
+Create a new Swag Migration General Setting resources
+
+### Example
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+// Configure OAuth2 access token for authorization: oAuth
+$config = Swagger\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+
+$apiInstance = new Swagger\Client\Api\SwagMigrationGeneralSettingApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client(),
+    $config
+);
+$body = new \Swagger\Client\Model\SwagmigrationgeneralsettingBody(); // \Swagger\Client\Model\SwagmigrationgeneralsettingBody | 
+$_response = "_response_example"; // string | Data format for response. Empty if none is provided.
+
+try {
+    $result = $apiInstance->createSwagMigrationGeneralSetting($body, $_response);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling SwagMigrationGeneralSettingApi->createSwagMigrationGeneralSetting: ', $e->getMessage(), PHP_EOL;
+}
+?>
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | [**\Swagger\Client\Model\SwagmigrationgeneralsettingBody**](../Model/SwagmigrationgeneralsettingBody.md)|  | [optional]
+ **_response** | **string**| Data format for response. Empty if none is provided. | [optional]
+
+### Return type
+
+[**\Swagger\Client\Model\InlineResponse200452**](../Model/InlineResponse200452.md)
+
+### Authorization
+
+[oAuth](../../README.md#oAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/vnd.api+json, application/json
+ - **Accept**: application/vnd.api+json, application/json
+
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+
+# **deleteSwagMigrationGeneralSetting**
+> deleteSwagMigrationGeneralSetting($id, $_response)
+
+Delete a Swag Migration General Setting resource
+
+### Example
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+// Configure OAuth2 access token for authorization: oAuth
+$config = Swagger\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+
+$apiInstance = new Swagger\Client\Api\SwagMigrationGeneralSettingApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client(),
+    $config
+);
+$id = "id_example"; // string | Identifier for the swag_migration_general_setting
+$_response = "_response_example"; // string | Data format for response. Empty if none is provided.
+
+try {
+    $apiInstance->deleteSwagMigrationGeneralSetting($id, $_response);
+} catch (Exception $e) {
+    echo 'Exception when calling SwagMigrationGeneralSettingApi->deleteSwagMigrationGeneralSetting: ', $e->getMessage(), PHP_EOL;
+}
+?>
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Identifier for the swag_migration_general_setting |
+ **_response** | **string**| Data format for response. Empty if none is provided. | [optional]
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[oAuth](../../README.md#oAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/vnd.api+json, application/json
+
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+
+# **getSwagMigrationGeneralSetting**
+> \Swagger\Client\Model\InlineResponse200452 getSwagMigrationGeneralSetting($id)
+
+Detailed information about a Swag Migration General Setting resource
+
+### Example
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+// Configure OAuth2 access token for authorization: oAuth
+$config = Swagger\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+
+$apiInstance = new Swagger\Client\Api\SwagMigrationGeneralSettingApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client(),
+    $config
+);
+$id = "id_example"; // string | Identifier for the swag_migration_general_setting
+
+try {
+    $result = $apiInstance->getSwagMigrationGeneralSetting($id);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling SwagMigrationGeneralSettingApi->getSwagMigrationGeneralSetting: ', $e->getMessage(), PHP_EOL;
+}
+?>
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Identifier for the swag_migration_general_setting |
+
+### Return type
+
+[**\Swagger\Client\Model\InlineResponse200452**](../Model/InlineResponse200452.md)
+
+### Authorization
+
+[oAuth](../../README.md#oAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/vnd.api+json, application/json
+
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+
+# **getSwagMigrationGeneralSettingList**
+> \Swagger\Client\Model\InlineResponse200450 getSwagMigrationGeneralSettingList($limit, $page, $query)
+
+List with basic information of Swag Migration General Setting resources
+
+### Example
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+// Configure OAuth2 access token for authorization: oAuth
+$config = Swagger\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+
+$apiInstance = new Swagger\Client\Api\SwagMigrationGeneralSettingApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client(),
+    $config
+);
+$limit = 56; // int | Max amount of resources to be returned in a page
+$page = 56; // int | The page to be returned
+$query = "query_example"; // string | Encoded SwagQL in JSON
+
+try {
+    $result = $apiInstance->getSwagMigrationGeneralSettingList($limit, $page, $query);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling SwagMigrationGeneralSettingApi->getSwagMigrationGeneralSettingList: ', $e->getMessage(), PHP_EOL;
+}
+?>
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **limit** | **int**| Max amount of resources to be returned in a page | [optional]
+ **page** | **int**| The page to be returned | [optional]
+ **query** | **string**| Encoded SwagQL in JSON | [optional]
+
+### Return type
+
+[**\Swagger\Client\Model\InlineResponse200450**](../Model/InlineResponse200450.md)
+
+### Authorization
+
+[oAuth](../../README.md#oAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/vnd.api+json, application/json
+
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+
+# **updateSwagMigrationGeneralSetting**
+> \Swagger\Client\Model\InlineResponse200452 updateSwagMigrationGeneralSetting($id, $body, $_response)
+
+Partially update information about a Swag Migration General Setting resource
+
+### Example
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+// Configure OAuth2 access token for authorization: oAuth
+$config = Swagger\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+
+$apiInstance = new Swagger\Client\Api\SwagMigrationGeneralSettingApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client(),
+    $config
+);
+$id = "id_example"; // string | Identifier for the swag_migration_general_setting
+$body = new \Swagger\Client\Model\SwagmigrationgeneralsettingIdBody(); // \Swagger\Client\Model\SwagmigrationgeneralsettingIdBody | Partially update information about a Swag Migration General Setting resource.
+$_response = "_response_example"; // string | Data format for response. Empty if none is provided.
+
+try {
+    $result = $apiInstance->updateSwagMigrationGeneralSetting($id, $body, $_response);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling SwagMigrationGeneralSettingApi->updateSwagMigrationGeneralSetting: ', $e->getMessage(), PHP_EOL;
+}
+?>
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Identifier for the swag_migration_general_setting |
+ **body** | [**\Swagger\Client\Model\SwagmigrationgeneralsettingIdBody**](../Model/SwagmigrationgeneralsettingIdBody.md)| Partially update information about a Swag Migration General Setting resource. | [optional]
+ **_response** | **string**| Data format for response. Empty if none is provided. | [optional]
+
+### Return type
+
+[**\Swagger\Client\Model\InlineResponse200452**](../Model/InlineResponse200452.md)
+
+### Authorization
+
+[oAuth](../../README.md#oAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/vnd.api+json, application/json
+ - **Accept**: application/vnd.api+json, application/json
+
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+
+# **updateSwagMigrationGeneralSetting**
+> \Swagger\Client\Model\InlineResponse200452 updateSwagMigrationGeneralSetting($id, $body, $_response)
+
+Partially update information about a Swag Migration General Setting resource
+
+### Example
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+// Configure OAuth2 access token for authorization: oAuth
+$config = Swagger\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+
+$apiInstance = new Swagger\Client\Api\SwagMigrationGeneralSettingApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client(),
+    $config
+);
+$id = "id_example"; // string | Identifier for the swag_migration_general_setting
+$body = new \Swagger\Client\Model\SwagmigrationgeneralsettingIdBody(); // \Swagger\Client\Model\SwagmigrationgeneralsettingIdBody | Partially update information about a Swag Migration General Setting resource.
+$_response = "_response_example"; // string | Data format for response. Empty if none is provided.
+
+try {
+    $result = $apiInstance->updateSwagMigrationGeneralSetting($id, $body, $_response);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling SwagMigrationGeneralSettingApi->updateSwagMigrationGeneralSetting: ', $e->getMessage(), PHP_EOL;
+}
+?>
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Identifier for the swag_migration_general_setting |
+ **body** | [**\Swagger\Client\Model\SwagmigrationgeneralsettingIdBody**](../Model/SwagmigrationgeneralsettingIdBody.md)| Partially update information about a Swag Migration General Setting resource. | [optional]
+ **_response** | **string**| Data format for response. Empty if none is provided. | [optional]
+
+### Return type
+
+[**\Swagger\Client\Model\InlineResponse200452**](../Model/InlineResponse200452.md)
+
+### Authorization
+
+[oAuth](../../README.md#oAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/vnd.api+json, application/json
+ - **Accept**: application/vnd.api+json, application/json
+
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+

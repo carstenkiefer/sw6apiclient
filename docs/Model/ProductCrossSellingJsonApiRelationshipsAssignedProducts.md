@@ -1,0 +1,10 @@
+# ProductCrossSellingJsonApiRelationshipsAssignedProducts
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**links** | [**\Swagger\Client\Model\ProductCrossSellingJsonApiRelationshipsAssignedProductsLinks**](ProductCrossSellingJsonApiRelationshipsAssignedProductsLinks.md) |  | [optional] 
+**data** | [**\Swagger\Client\Model\ProductCrossSellingJsonApiRelationshipsAssignedProductsData[]**](ProductCrossSellingJsonApiRelationshipsAssignedProductsData.md) |  | [optional] 
+
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
+
